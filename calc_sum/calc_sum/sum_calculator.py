@@ -1,2 +1,15 @@
-def add(a, b):
-    return a + b
+def calculate(a, b, operation):
+    """Calculate using addition, subtraction, multiplication, or division."""[cite: 1]
+    if type(a) not in (int, float) or type(b) not in (int, float):[cite: 1]
+        raise TypeError("Both operands must be numbers.")[cite: 1]
+
+    if operation == "+":[cite: 1]
+        return a + b[cite: 1]
+    elif operation == "-":[cite: 1]
+        return a - b[cite: 1]
+    elif operation == "*":[cite: 1]
+        return a * b[cite: 1]
+    elif operation == "/":[cite: 1]
+        return a / b[cite: 1]
+    else:[cite: 1]
+        raise ValueError("Unsupported operation. Use +, -, *, or /.")[cite: 1]
