@@ -21,4 +21,4 @@ jobs:
           python-version: "3.12"
 
       - name: Run unit tests
-        run: python -m unittest tests.test_Calculator -v
+        run: python -m unittest test_Calculator.py -v
