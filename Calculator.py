@@ -15,7 +15,7 @@ def main():
     print("Type 'exit' to quit.")
 
     while True:
-        operation = input("Enter operation + ").strip()
+        operation = input("Enter operation +: ").strip()
 
         if operation.lower() == "exit":
             print("Goodbye!")
@@ -26,7 +26,6 @@ def main():
             b = float(input("Enter second number: "))
             result = calculate(a, b, operation)
             print("Result:", result)
-
         except (ValueError, TypeError) as error:
             print("Error:", error)
 
